@@ -1,0 +1,8 @@
+<h1>{{ category | uppercase }}</h1>
+
+<div *ngFor="let news of newsList">
+  <a [routerLink]="['/berita', news.link]">
+    {{ news.title }}
+  </a>
+</div>
+

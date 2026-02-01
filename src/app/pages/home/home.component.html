@@ -1,0 +1,21 @@
+<section *ngIf="headline">
+  <h1>{{ headline.title }}</h1>
+  <p>{{ headline.description }}</p>
+  <a [routerLink]="['/berita', headline.link]">
+    Baca Selengkapnya →
+  </a>
+</section>
+
+<section>
+  <h2>Berita Terpopuler</h2>
+  <div *ngFor="let news of popularNews; let i = index">
+    <strong>{{ i + 1 }}</strong> {{ news.title }}
+  </div>
+</section>
+
+<section>
+  <h2>Rekomendasi Untuk Anda</h2>
+  <div *ngFor="let news of recommendations">
+    {{ news.title }}
+  </div>
+</section>
