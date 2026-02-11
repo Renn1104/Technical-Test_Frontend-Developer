@@ -9,7 +9,3 @@ export const routes: Routes = [
   { path: 'berita/:id', component: DetailComponent },
   { path: '**', redirectTo: '' }
 ];
-
-
-
-
